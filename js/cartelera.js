@@ -2,7 +2,7 @@
 var pelicula_0 = {
     id: 1,
     nombre: "Granizo",
-    imagen: "../img/Peliculas/Granizo.jpg",
+    imagen: "./img/Peliculas/Granizo.jpg",
     fecha_ini: "01/03/2022",
     fecha_fin: "31/12/2022",
     horarios: ["20:00","22:00"],
@@ -12,7 +12,7 @@ var pelicula_0 = {
 var pelicula_1 = {
     id: 2,
     nombre: "Doctor Strange en el mutiverso de la locura",
-    imagen: "../img/Peliculas/Doctor_Strange2.jpg",
+    imagen: "./img/Peliculas/Doctor_Strange2.jpg",
     fecha_ini: "01/05/2022",
     fecha_fin: "31/12/2022",
     horarios: ["16:00","19:00","21:00"],
@@ -22,7 +22,7 @@ var pelicula_1 = {
 var pelicula_2 = {
     id: 3,
     nombre: "Animales Fantásticos: Los secretos de Dumbledore",
-    imagen: "../img/Peliculas/Animales_Fantasticos3.jpg",
+    imagen: "./img/Peliculas/Animales_Fantasticos3.jpg",
     fecha_ini: "01/03/2022",
     fecha_fin: "01/06/2022",
     horarios: ["17:00","20:00"],
@@ -32,7 +32,7 @@ var pelicula_2 = {
 var pelicula_3 = {
     id: 4,
     nombre: "El peso del talento",
-    imagen: "../img/Peliculas/El-peso-del-talento.jpg",
+    imagen: "./img/Peliculas/El-peso-del-talento.jpg",
     fecha_ini: "01/05/2022",
     fecha_fin: "01/01/2023",
     horarios: ["15:30","21:30"],
@@ -42,7 +42,7 @@ var pelicula_3 = {
 var pelicula_4 = {
     id: 5,
     nombre: "Lightyear",
-    imagen: "../img/Peliculas/Lightyear.jpg",
+    imagen: "./img/Peliculas/Lightyear.jpg",
     fecha_ini: "10/06/2022",
     fecha_fin: "01/02/2023",
     horarios: ["15:00","17:00","21:00"],
@@ -52,7 +52,7 @@ var pelicula_4 = {
 var pelicula_5 = {
     id: 6,
     nombre: "Sonic 2, la película",
-    imagen: "../img/Peliculas/Sonic2.jpg",
+    imagen: "./img/Peliculas/Sonic2.jpg",
     fecha_ini: "01/04/2022",
     fecha_fin: "31/12/2022",
     horarios: ["20:30","16:30"],
@@ -62,7 +62,7 @@ var pelicula_5 = {
 var pelicula_6 = {
     id: 7,
     nombre: "La médium",
-    imagen: "../img/Peliculas/The_Medium.jpg",
+    imagen: "./img/Peliculas/The_Medium.jpg",
     fecha_ini: "01/04/2022",
     fecha_fin: "09/06/2022",
     horarios: ["21:30","23:00"],
@@ -72,7 +72,7 @@ var pelicula_6 = {
 var pelicula_7 = {
     id: 8,
     nombre: "Top Gun: Maverick",
-    imagen: "../img/Peliculas/Top_Gun_Maverick.jpg",
+    imagen: "./img/Peliculas/Top_Gun_Maverick.jpg",
     fecha_ini: "01/05/2022",
     fecha_fin: "31/12/2022",
     horarios: ["18:00","20:00","22:00"],
@@ -94,7 +94,7 @@ var mostrarCartelera = () =>
     for (let pelicula in peliculas){
         cartelera.innerHTML = cartelera.innerHTML + `
         <div class="pelicula-item" id=${peliculas[pelicula].id}>
-            <a href="../detalle-pelicula.html" class="">
+            <a href="./detalle-pelicula.html" class="">
                 <img src=${peliculas[pelicula].imagen} alt="">
                 <div class="detalle-pelicula">
                     <p class="pelicula-titulo">${peliculas[pelicula].nombre}</p>
